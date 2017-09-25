@@ -7,7 +7,7 @@ if(isset($_POST["submit"])) {
 }
 
 /**
- *
+ *This function determines whether a valid entry has been inserted . e.g every rail must have a post + 1 at the end
  *
  * @param $posts
  * @param $rails
@@ -23,7 +23,7 @@ function Check($posts, $rails)
     }
 }
 /*
- * This is there the unit size for both the ost and rail is defined.
+ * This is where the unit size for both the post and rail is defined.
  *
  * @param $posts
  * @param $rails
