@@ -5,6 +5,14 @@ if(isset($_POST["submit"])) {
 //    var_dump($posts, $rails);
     echo Check($posts, $rails);
 }
+
+/**
+ *
+ *
+ * @param $posts
+ * @param $rails
+ * @return string
+ */
 function Check($posts, $rails)
 {
     if ($posts > 1 && $rails > 0) {
@@ -14,6 +22,14 @@ function Check($posts, $rails)
         return "<span class='error'>" . "You haven't specified a valid amount !" . "</span>";
     }
 }
+/*
+ * This is there the unit size for both the ost and rail is defined.
+ *
+ * @param $posts
+ * @param $rails
+ * @return float
+ *
+ */
 function length($posts, $rails)
 {
     $max_length = 0.1;
